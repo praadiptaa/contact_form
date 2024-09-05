@@ -6,7 +6,7 @@
     <title>Data Kontak</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Gaya warna cerah pada font dan latar belakang */
+        /* Gaya modern bersih dengan sentuhan warna cerah */
         body, html {
             margin: 0;
             padding: 0;
@@ -14,69 +14,108 @@
             font-family: 'Comic Neue', cursive;
             background: url('https://img.pikbest.com/wp/202345/cartoon-forest-scene-beautiful-animated-wallpaper-hd_9582714.jpg!bw700') no-repeat center center fixed;
             background-size: cover;
-            color: #333; /* Warna teks default */
+            color: #333;
         }
 
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            border: 5px solid #ff9800; /* Border warna oranye cerah */
+            
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
-            text-align: center;
-            color: #ff5722; /* Warna oranye terang */
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-            animation: bounceIn 1.5s;
-        }
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #fff 10%, #e6e6e6 50%, #fff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.2);
+    animation: shine 2s linear infinite, bounceIn 1.5s;
+    position: relative;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
         table {
             width: 100%;
             border-collapse: collapse;
-            animation: scaleUp 0.7s ease-out;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         th, td {
-            padding: 12px;
-            text-align: center;
-            border: 2px solid #ff9800; /* Warna border oranye */
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
         }
 
         th {
-            background-color: #ffeb3b; /* Warna kuning terang untuk header */
-            color: #000;
+            background-color: #ff9800;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-right: 1px solid white;
             font-weight: bold;
-            animation: pulse 2s infinite;
+        }
+
+        th:last-child {
+            border-right: none;
         }
 
         td {
-            background-color: #fff;
-            color: #333;
-            transition: background-color 0.4s ease;
+            background-color: white;
+            border-right: 1px solid #f0f0f0;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        tr:nth-child(even) {
-            background-color: #e1f5fe; /* Warna biru terang untuk baris genap */
+        td:last-child {
+            border-right: none;
         }
 
-        tr:hover {
+        /* Warna alternatif untuk baris genap */
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        /* Efek hover */
+        tr:hover td {
             background-color: #ffeb3b;
+            color: #333;
             cursor: pointer;
-            animation: highlight 0.6s;
         }
 
         p {
             text-align: center;
-            color: #03a9f4; /* Warna biru terang */
-            font-size: 1.5em;
+            color: #03a9f4;
+            font-size: 1.4em;
             font-weight: bold;
             animation: fadeIn 1.5s ease-in;
         }
@@ -91,23 +130,6 @@
             0% { transform: scale(0); }
             50% { transform: scale(1.2); }
             100% { transform: scale(1); }
-        }
-
-        @keyframes scaleUp {
-            from { transform: scale(0.9); }
-            to { transform: scale(1); }
-        }
-
-        @keyframes pulse {
-            0% { background-color: #ffeb3b; }
-            50% { background-color: #ffca28; }
-            100% { background-color: #ffeb3b; }
-        }
-
-        @keyframes highlight {
-            0% { background-color: #ffeb3b; }
-            50% { background-color: #ffeb3b; }
-            100% { background-color: #ff9800; }
         }
     </style>
 </head>
