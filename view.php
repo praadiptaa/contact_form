@@ -6,13 +6,13 @@
     <title>Data Kontak</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Gaya kartun pada font dan latar belakang */
+        /* Gaya warna cerah pada font dan latar belakang */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 'Comic Neue', cursive; /* Font kartun */
-            background: url('https://asset-2.tstatic.net/tribunnews/foto/bank/images/ilustrasi-fakultas-vokasi-universitas-brawijaya-ub.jpg') no-repeat center center fixed; /* Background transparan */
+            font-family: 'Comic Neue', cursive;
+            background: url('https://img.pikbest.com/wp/202345/cartoon-forest-scene-beautiful-animated-wallpaper-hd_9582714.jpg!bw700') no-repeat center center fixed;
             background-size: cover;
             color: #333; /* Warna teks default */
         }
@@ -21,16 +21,16 @@
             width: 80%;
             margin: 20px auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            border: 5px solid #ffcc00; /* Border berwarna cerah */
+            border: 5px solid #ff9800; /* Border warna oranye cerah */
             animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
             text-align: center;
-            color: #ff5722;
+            color: #ff5722; /* Warna oranye terang */
             font-size: 3em;
             margin-bottom: 20px;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
@@ -41,17 +41,17 @@
             width: 100%;
             border-collapse: collapse;
             animation: scaleUp 0.7s ease-out;
-            font-size: 1.2em; /* Ukuran font lebih besar untuk kesan kartun */
+            font-size: 1.2em;
         }
 
         th, td {
             padding: 12px;
             text-align: center;
-            border: 2px solid #ffcc00;
+            border: 2px solid #ff9800; /* Warna border oranye */
         }
 
         th {
-            background-color: #ffeb3b;
+            background-color: #ffeb3b; /* Warna kuning terang untuk header */
             color: #000;
             font-weight: bold;
             animation: pulse 2s infinite;
@@ -64,7 +64,7 @@
         }
 
         tr:nth-child(even) {
-            background-color: #f9fbe7;
+            background-color: #e1f5fe; /* Warna biru terang untuk baris genap */
         }
 
         tr:hover {
@@ -75,7 +75,7 @@
 
         p {
             text-align: center;
-            color: #ff5722;
+            color: #03a9f4; /* Warna biru terang */
             font-size: 1.5em;
             font-weight: bold;
             animation: fadeIn 1.5s ease-in;
@@ -100,14 +100,14 @@
 
         @keyframes pulse {
             0% { background-color: #ffeb3b; }
-            50% { background-color: #fdd835; }
+            50% { background-color: #ffca28; }
             100% { background-color: #ffeb3b; }
         }
 
         @keyframes highlight {
             0% { background-color: #ffeb3b; }
             50% { background-color: #ffeb3b; }
-            100% { background-color: #ffcc00; }
+            100% { background-color: #ff9800; }
         }
     </style>
 </head>
